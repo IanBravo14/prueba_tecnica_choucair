@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Prueba Técnica CHOUCAIR</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_registrar_cliente_en_la_aplicacion_web.html">Registrar Cliente En La Aplicacion Web</a></span>
+                > <span class="truncate-60"><a
+                    href="registrar_cliente_en_la_aplicacion_web_registrar_cliente_llenando_todos_los_campos.html">Registrar cliente llenando todos los campos </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-01-2021 11:51</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Registrar Cliente En La Aplicacion Web </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como cliente<br />
+Quiero poder registrarme en la pagina<br />
+Para tener acceso a todas las opciones que me ofrece la pagina
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_ian.html">Ian
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registrar cliente llenando todos los campos
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que "Ian" ingresa a la aplicacion<br>Cuando en el registro ingresa todos los campos<br><table class='embedded'><tbody><tr><td>&lt;nombre&gt;</td><td>&lt;apellido&gt;</td><td>&lt;correo&gt;</td><td>&lt;pass&gt;</td><td>&lt;fecha_nac&gt;</td><td>&lt;compania&gt;</td><td>&lt;dir&gt;</td><td>&lt;dir_2&gt;</td><td>&lt;ciudad&gt;</td><td>&lt;estado&gt;</td><td>&lt;cod_postal&gt;</td><td>&lt;pais&gt;</td><td>&lt;info_adic&gt;</td><td>&lt;tel&gt;</td><td>&lt;cel&gt;</td><td>&lt;dir_ref&gt;</td></tr></tbody></table><br>Entonces se debe ver un mensaje de bienvenida a su cuenta<br><table class='embedded'><tbody><tr><td>&lt;mensaje_bienvenida&gt;</td><td>&lt;nombre_usuario&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Example: {nombre=Ian, apellido=Bravo, correo=hola04@gmail.com, pass=TensaZangetsu, fecha_nac=12;January;1992, compania=Choucair, dir=Avenida SiempreViva, dir_2=Avenida Siempre Viva 1234, ciudad=Medellin, estado=Florida, cod_postal=12345, pais=United States, info_adic=Esto es una prueba, tel=5120897, cel=3219863456, dir_ref=Avenida Siempre Viva, mensaje_bienvenida=Welcome to your account. Here you can manage all of your personal information and orders., nombre_usuario=Ian Bravo}" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Dado que &quot;Ian&quot; ingresa a la aplicacion" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Ian opens the http://automationpractice.com/index.php" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Dado que &quot;Ian&quot; ingresa a la aplicacion (completed)" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Cuando en el registro ingresa todos los campos
+| Ian | Bravo | hola04@gmail.com | TensaZangetsu | 12;January;1992 | Choucair | Avenida SiempreViva | Avenida Siempre Viva 1234 | Medellin | Florida | 12345 | United States | Esto es una prueba | 5120897 | 3219863456 | Avenida Siempre Viva |" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Ian crear cuenta" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Ian clicks on bot&oacute;n para ingresar al registro" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Ian clicks on bot&oacute;n para ingresar al registro" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Ian clicks on bot&oacute;n para ingresar al registro (completed)" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Ian enters 'hola04@gmail.com' into campo donde se introduce el correo" width="1366"/>
+                <img src="9fdca2631bd321d974e865a3a7d9d3a56748e4a4693cad4ed10f460611cccf4c.png" title=" Ian enters 'hola04@gmail.com' into campo donde se introduce el correo" width="1366"/>
+                <img src="9fdca2631bd321d974e865a3a7d9d3a56748e4a4693cad4ed10f460611cccf4c.png" title=" Ian enters 'hola04@gmail.com' into campo donde se introduce el correo (completed)" width="1366"/>
+                <img src="31debe4c81eab1ccffa5d860d2f57e97e55a68f2a0a3028bfc8192b82484c5e2.png" title=" Ian clicks on bot&oacute;n para iniciar la creaci&oacute;n de la cuenta" width="1366"/>
+                <img src="c0c32fb1c811af4ddef6f8410d5705117ed74660701b4a764345e0125a85accd.png" title=" Ian clicks on bot&oacute;n para iniciar la creaci&oacute;n de la cuenta" width="1366"/>
+                <img src="c0c32fb1c811af4ddef6f8410d5705117ed74660701b4a764345e0125a85accd.png" title=" Ian clicks on bot&oacute;n para iniciar la creaci&oacute;n de la cuenta (completed)" width="1366"/>
+                <img src="c0c32fb1c811af4ddef6f8410d5705117ed74660701b4a764345e0125a85accd.png" title=" Ian introducir datos" width="1366"/>
+                <img src="58e93dad3aea3ac5d462048b17003a38d1b9633d2256510e4c229b208e5c6153.png" title=" Ian clicks on radio bot&oacute;n para seleccionar t&iacute;tulo de mr" width="1366"/>
+                <img src="71b136f6a05491636f26b867b2b673e786065237954171a20e2fea85a6500d6c.png" title=" Ian clicks on radio bot&oacute;n para seleccionar t&iacute;tulo de mr" width="1366"/>
+                <img src="71b136f6a05491636f26b867b2b673e786065237954171a20e2fea85a6500d6c.png" title=" Ian clicks on radio bot&oacute;n para seleccionar t&iacute;tulo de mr (completed)" width="1366"/>
+                <img src="71b136f6a05491636f26b867b2b673e786065237954171a20e2fea85a6500d6c.png" title=" Ian enters 'Ian' into campo donde se introduce el nombre del cliente" width="1366"/>
+                <img src="02528e51c5d5e760f2a822733213afd58983b6afff58a6e8f155b92c856acdef.png" title=" Ian enters 'Ian' into campo donde se introduce el nombre del cliente" width="1366"/>
+                <img src="02528e51c5d5e760f2a822733213afd58983b6afff58a6e8f155b92c856acdef.png" title=" Ian enters 'Ian' into campo donde se introduce el nombre del cliente (completed)" width="1366"/>
+                <img src="02528e51c5d5e760f2a822733213afd58983b6afff58a6e8f155b92c856acdef.png" title=" Ian enters 'Bravo' into campo donde se introduce el apellido del cliente" width="1366"/>
+                <img src="476e3b2d30b80a69fc5698e433229e7e2ccd81f76fc370d59e67306652650c1d.png" title=" Ian enters 'Bravo' into campo donde se introduce el apellido del cliente" width="1366"/>
+                <img src="476e3b2d30b80a69fc5698e433229e7e2ccd81f76fc370d59e67306652650c1d.png" title=" Ian enters 'Bravo' into campo donde se introduce el apellido del cliente (completed)" width="1366"/>
+                <img src="476e3b2d30b80a69fc5698e433229e7e2ccd81f76fc370d59e67306652650c1d.png" title=" Ian enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente" width="1366"/>
+                <img src="81c707c8c1a78c4bf6817bccda8471bb0f6e38c16ec5b9eb7e3de7ca795196bf.png" title=" Ian enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente" width="1366"/>
+                <img src="81c707c8c1a78c4bf6817bccda8471bb0f6e38c16ec5b9eb7e3de7ca795196bf.png" title=" Ian enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente (completed)" width="1366"/>
+                <img src="81c707c8c1a78c4bf6817bccda8471bb0f6e38c16ec5b9eb7e3de7ca795196bf.png" title=" Ian select 12   on lista desplegable de los d&iacute;as" width="1366"/>
+                <img src="ce0348070a4f50ddc23cd09b655c36db2d4adf7da0b297e44a237d1f0940cbb3.png" title=" Ian select 12   on lista desplegable de los d&iacute;as" width="1366"/>
+                <img src="ce0348070a4f50ddc23cd09b655c36db2d4adf7da0b297e44a237d1f0940cbb3.png" title=" Ian select 12   on lista desplegable de los d&iacute;as (completed)" width="1366"/>
+                <img src="ce0348070a4f50ddc23cd09b655c36db2d4adf7da0b297e44a237d1f0940cbb3.png" title=" Ian select January  on lista desplegable de los meses" width="1366"/>
+                <img src="c9d0b2206fe2daaef926bb3b7dc0f935073957e770552e506388d9aac22c2ef7.png" title=" Ian select January  on lista desplegable de los meses" width="1366"/>
+                <img src="c9d0b2206fe2daaef926bb3b7dc0f935073957e770552e506388d9aac22c2ef7.png" title=" Ian select January  on lista desplegable de los meses (completed)" width="1366"/>
+                <img src="c9d0b2206fe2daaef926bb3b7dc0f935073957e770552e506388d9aac22c2ef7.png" title=" Ian select 1992   on lista desplegable de los a&ntilde;os" width="1366"/>
+                <img src="04674b03a7afa789075306c01e2b39c45288de0f95f75bfc248d7259c69c8c8a.png" title=" Ian select 1992   on lista desplegable de los a&ntilde;os" width="1366"/>
+                <img src="04674b03a7afa789075306c01e2b39c45288de0f95f75bfc248d7259c69c8c8a.png" title=" Ian select 1992   on lista desplegable de los a&ntilde;os (completed)" width="1366"/>
+                <img src="04674b03a7afa789075306c01e2b39c45288de0f95f75bfc248d7259c69c8c8a.png" title=" Ian enters 'Choucair' into campo donde se introduce el nombre de la compa&ntilde;&iacute;a" width="1366"/>
+                <img src="a8b2b75d13c4121ffed80e47ba00a25996161fb11e431270e6bbc5706babf951.png" title=" Ian enters 'Choucair' into campo donde se introduce el nombre de la compa&ntilde;&iacute;a" width="1366"/>
+                <img src="a8b2b75d13c4121ffed80e47ba00a25996161fb11e431270e6bbc5706babf951.png" title=" Ian enters 'Choucair' into campo donde se introduce el nombre de la compa&ntilde;&iacute;a (completed)" width="1366"/>
+                <img src="a8b2b75d13c4121ffed80e47ba00a25996161fb11e431270e6bbc5706babf951.png" title=" Ian enters 'Avenida SiempreViva' into campo donde se introduce la direcci&oacute;n del cliente" width="1366"/>
+                <img src="546640d3a3d0c6f5b08b99dcfa198d49c29d2eac2eb1d7ae7080f254d46ea57a.png" title=" Ian enters 'Avenida SiempreViva' into campo donde se introduce la direcci&oacute;n del cliente" width="1366"/>
+                <img src="546640d3a3d0c6f5b08b99dcfa198d49c29d2eac2eb1d7ae7080f254d46ea57a.png" title=" Ian enters 'Avenida SiempreViva' into campo donde se introduce la direcci&oacute;n del cliente (completed)" width="1366"/>
+                <img src="546640d3a3d0c6f5b08b99dcfa198d49c29d2eac2eb1d7ae7080f254d46ea57a.png" title=" Ian enters 'Avenida Siempre Viva 1234' into campo donde se introduce la direcci&oacute;n secundaria del cliente" width="1366"/>
+                <img src="13420ab41275f9cc0b4f7277dfd07efe324a378b4352f391feda98b145852856.png" title=" Ian enters 'Avenida Siempre Viva 1234' into campo donde se introduce la direcci&oacute;n secundaria del cliente" width="1366"/>
+                <img src="13420ab41275f9cc0b4f7277dfd07efe324a378b4352f391feda98b145852856.png" title=" Ian enters 'Avenida Siempre Viva 1234' into campo donde se introduce la direcci&oacute;n secundaria del cliente (completed)" width="1366"/>
+                <img src="13420ab41275f9cc0b4f7277dfd07efe324a378b4352f391feda98b145852856.png" title=" Ian enters 'Medellin' into campo donde se introduce la ciudad" width="1366"/>
+                <img src="13e5a4f0bc63a62ebd69edce65f24725f0e42105d4fe07d14050bf162d1705cd.png" title=" Ian enters 'Medellin' into campo donde se introduce la ciudad" width="1366"/>
+                <img src="13e5a4f0bc63a62ebd69edce65f24725f0e42105d4fe07d14050bf162d1705cd.png" title=" Ian enters 'Medellin' into campo donde se introduce la ciudad (completed)" width="1366"/>
+                <img src="13e5a4f0bc63a62ebd69edce65f24725f0e42105d4fe07d14050bf162d1705cd.png" title=" Ian select Florida on lista desplegable de los estado que hay en USA" width="1366"/>
+                <img src="35fc787a1acd92d4c0ed51ef34ff9b3349ba1ad770812a1fc2dfd127cabed6fc.png" title=" Ian select Florida on lista desplegable de los estado que hay en USA" width="1366"/>
+                <img src="35fc787a1acd92d4c0ed51ef34ff9b3349ba1ad770812a1fc2dfd127cabed6fc.png" title=" Ian select Florida on lista desplegable de los estado que hay en USA (completed)" width="1366"/>
+                <img src="35fc787a1acd92d4c0ed51ef34ff9b3349ba1ad770812a1fc2dfd127cabed6fc.png" title=" Ian enters '12345' into campo donde se introduce el c&oacute;digo postal donde vive el cliente" width="1366"/>
+                <img src="8f38fe2ac21118b7587c9005ed9787339f85aaf9733942ea6d0be42f9f1480ff.png" title=" Ian enters '12345' into campo donde se introduce el c&oacute;digo postal donde vive el cliente" width="1366"/>
+                <img src="8f38fe2ac21118b7587c9005ed9787339f85aaf9733942ea6d0be42f9f1480ff.png" title=" Ian enters '12345' into campo donde se introduce el c&oacute;digo postal donde vive el cliente (completed)" width="1366"/>
+                <img src="8f38fe2ac21118b7587c9005ed9787339f85aaf9733942ea6d0be42f9f1480ff.png" title=" Ian select United States on lista desplegable de los pa&iacute;ses" width="1366"/>
+                <img src="74fab679064b670d34f9780e602b9e3e2b0e0868e06eebefb110946abd671a27.png" title=" Ian select United States on lista desplegable de los pa&iacute;ses" width="1366"/>
+                <img src="74fab679064b670d34f9780e602b9e3e2b0e0868e06eebefb110946abd671a27.png" title=" Ian select United States on lista desplegable de los pa&iacute;ses (completed)" width="1366"/>
+                <img src="74fab679064b670d34f9780e602b9e3e2b0e0868e06eebefb110946abd671a27.png" title=" Ian enters 'Esto es una prueba' into &aacute;rea de texto donde el cliente escribe informaci&oacute;n adicional" width="1366"/>
+                <img src="dbc9fdacca5f6c669e0f8b59c7f0899b9b129c20d8d62441e50015941cce09f9.png" title=" Ian enters 'Esto es una prueba' into &aacute;rea de texto donde el cliente escribe informaci&oacute;n adicional" width="1366"/>
+                <img src="dbc9fdacca5f6c669e0f8b59c7f0899b9b129c20d8d62441e50015941cce09f9.png" title=" Ian enters 'Esto es una prueba' into &aacute;rea de texto donde el cliente escribe informaci&oacute;n adicional (completed)" width="1366"/>
+                <img src="dbc9fdacca5f6c669e0f8b59c7f0899b9b129c20d8d62441e50015941cce09f9.png" title=" Ian enters '5120897' into campo donde se introduce el n&uacute;mero de tel&eacute;fono" width="1366"/>
+                <img src="040a3fae7d88035270568da5b7c6b0b4c876cd5b6b542d0ea9014fccc019cb5d.png" title=" Ian enters '5120897' into campo donde se introduce el n&uacute;mero de tel&eacute;fono" width="1366"/>
+                <img src="040a3fae7d88035270568da5b7c6b0b4c876cd5b6b542d0ea9014fccc019cb5d.png" title=" Ian enters '5120897' into campo donde se introduce el n&uacute;mero de tel&eacute;fono (completed)" width="1366"/>
+                <img src="040a3fae7d88035270568da5b7c6b0b4c876cd5b6b542d0ea9014fccc019cb5d.png" title=" Ian enters '3219863456' into campo donde se introduce el n&uacute;mero de celular" width="1366"/>
+                <img src="114fc2fbf3e54a7bac1be69d5a107abbab94e4241caa50c50abed04594de5cd4.png" title=" Ian enters '3219863456' into campo donde se introduce el n&uacute;mero de celular" width="1366"/>
+                <img src="114fc2fbf3e54a7bac1be69d5a107abbab94e4241caa50c50abed04594de5cd4.png" title=" Ian enters '3219863456' into campo donde se introduce el n&uacute;mero de celular (completed)" width="1366"/>
+                <img src="114fc2fbf3e54a7bac1be69d5a107abbab94e4241caa50c50abed04594de5cd4.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce una direcci&oacute;n alternativa para futura referencia" width="1366"/>
+                <img src="09ccdb54457f71dacc890e5e068b9448adb6676c5b85e6f0cadf5e6b7f699dbd.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce una direcci&oacute;n alternativa para futura referencia" width="1366"/>
+                <img src="09ccdb54457f71dacc890e5e068b9448adb6676c5b85e6f0cadf5e6b7f699dbd.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce una direcci&oacute;n alternativa para futura referencia (completed)" width="1366"/>
+                <img src="09ccdb54457f71dacc890e5e068b9448adb6676c5b85e6f0cadf5e6b7f699dbd.png" title=" Ian clicks on bot&oacute;n para finalizar el registro del cliente" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Ian clicks on bot&oacute;n para finalizar el registro del cliente" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Ian clicks on bot&oacute;n para finalizar el registro del cliente (completed)" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Ian introducir datos (completed)" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Ian crear cuenta (completed)" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Cuando en el registro ingresa todos los campos
+| Ian | Bravo | hola04@gmail.com | TensaZangetsu | 12;January;1992 | Choucair | Avenida SiempreViva | Avenida Siempre Viva 1234 | Medellin | Florida | 12345 | United States | Esto es una prueba | 5120897 | 3219863456 | Avenida Siempre Viva | (completed)" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Entonces se debe ver un mensaje de bienvenida a su cuenta
+| Welcome to your account. Here you can manage all of your personal information and orders. | Ian Bravo |" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Then pantalla bienvenida" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Then pantalla bienvenida (completed)" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Entonces se debe ver un mensaje de bienvenida a su cuenta
+| Welcome to your account. Here you can manage all of your personal information and orders. | Ian Bravo | (completed)" width="1366"/>
+                <img src="0e756989da24c11f08f79b574733c67a374782aa0747ef72b93c7df3f8cb8410.png" title=" Example: {nombre=Ian, apellido=Bravo, correo=hola04@gmail.com, pass=TensaZangetsu, fecha_nac=12;January;1992, compania=Choucair, dir=Avenida SiempreViva, dir_2=Avenida Siempre Viva 1234, ciudad=Medellin, estado=Florida, cod_postal=12345, pais=United States, info_adic=Esto es una prueba, tel=5120897, cel=3219863456, dir_ref=Avenida Siempre Viva, mensaje_bienvenida=Welcome to your account. Here you can manage all of your personal information and orders., nombre_usuario=Ian Bravo} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.84</span>
+</div>
+</body>
+</html>

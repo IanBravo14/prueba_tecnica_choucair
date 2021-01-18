@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Prueba Técnica CHOUCAIR</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_registrar_cliente_en_la_aplicacion_web.html">Registrar Cliente En La Aplicacion Web</a></span>
+                > <span class="truncate-60"><a
+                    href="registrar_cliente_en_la_aplicacion_web_registrar_cliente_sin_escribir_numero_telefonico.html">Registrar cliente sin escribir numero telefonico </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-01-2021 09:49</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Registrar Cliente En La Aplicacion Web </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como cliente<br />
+Quiero poder registrarme en la pagina<br />
+Para tener acceso a todas las opciones que me ofrece la pagina
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_ian.html">Ian
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registrar cliente sin escribir numero telefonico
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que "Ian" ingresa a la aplicacion<br>Cuando en el registro introduzca los siguientes datos a excepcion del numero de telefono<br><table class='embedded'><tbody><tr><td>&lt;nombre&gt;</td><td>&lt;apellido&gt;</td><td>&lt;correo&gt;</td><td>&lt;pass&gt;</td><td>&lt;fecha_nac&gt;</td><td>&lt;dir&gt;</td><td>&lt;ciudad&gt;</td><td>&lt;estado&gt;</td><td>&lt;cod_postal&gt;</td><td>&lt;pais&gt;</td><td>&lt;dir_ref&gt;</td></tr></tbody></table><br>Entonces le debe salir el mensaje de error "You must register at least one phone number."</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Example: {nombre=Ian, apellido=Bravo, correo=hola100@gmail.com, pass=TensaZangetsu, fecha_nac=14;June;1993, dir=Avenida Siempre Viva, ciudad=Medellin, estado=Kansas, cod_postal=12345, pais=United States, dir_ref=Avenida Siempre Viva}" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Dado que &quot;Ian&quot; ingresa a la aplicacion" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Ian opens the http://automationpractice.com/index.php" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Dado que &quot;Ian&quot; ingresa a la aplicacion (completed)" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Cuando en el registro introduzca los siguientes datos a excepcion del numero de telefono
+| Ian | Bravo | hola100@gmail.com | TensaZangetsu | 14;June;1993 | Avenida Siempre Viva | Medellin | Kansas | 12345 | United States | Avenida Siempre Viva |" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Ian crear cuenta" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Ian clicks on bot&oacute;n para ingresar al registro" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Ian clicks on bot&oacute;n para ingresar al registro" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Ian clicks on bot&oacute;n para ingresar al registro (completed)" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Ian enters 'hola100@gmail.com' into campo donde se introduce el correo" width="1366"/>
+                <img src="882db27f3928569e9330bb1be8493b99ce87e9f8e76119cfe834d19c5458463e.png" title=" Ian enters 'hola100@gmail.com' into campo donde se introduce el correo" width="1366"/>
+                <img src="882db27f3928569e9330bb1be8493b99ce87e9f8e76119cfe834d19c5458463e.png" title=" Ian enters 'hola100@gmail.com' into campo donde se introduce el correo (completed)" width="1366"/>
+                <img src="9c8d822c7976e17aec5548751671a77322aaf1f64561c6f14f69bf8d39ad1c5b.png" title=" Ian clicks on bot&oacute;n para iniciar la creaci&oacute;n de la cuenta" width="1366"/>
+                <img src="0251a531628098ebc7a5f020611302f82459c25798d68676b4629b86f0782e4a.png" title=" Ian clicks on bot&oacute;n para iniciar la creaci&oacute;n de la cuenta" width="1366"/>
+                <img src="0251a531628098ebc7a5f020611302f82459c25798d68676b4629b86f0782e4a.png" title=" Ian clicks on bot&oacute;n para iniciar la creaci&oacute;n de la cuenta (completed)" width="1366"/>
+                <img src="0251a531628098ebc7a5f020611302f82459c25798d68676b4629b86f0782e4a.png" title=" Ian introducir datos" width="1366"/>
+                <img src="952111ec167bddc4376c57d5c454f15da14f8f806ed215f0084841a0c06879d4.png" title=" Ian clicks on radio bot&oacute;n para seleccionar t&iacute;tulo de mr" width="1366"/>
+                <img src="71b136f6a05491636f26b867b2b673e786065237954171a20e2fea85a6500d6c.png" title=" Ian clicks on radio bot&oacute;n para seleccionar t&iacute;tulo de mr" width="1366"/>
+                <img src="71b136f6a05491636f26b867b2b673e786065237954171a20e2fea85a6500d6c.png" title=" Ian clicks on radio bot&oacute;n para seleccionar t&iacute;tulo de mr (completed)" width="1366"/>
+                <img src="71b136f6a05491636f26b867b2b673e786065237954171a20e2fea85a6500d6c.png" title=" Ian enters 'Ian' into campo donde se introduce el nombre del cliente" width="1366"/>
+                <img src="02528e51c5d5e760f2a822733213afd58983b6afff58a6e8f155b92c856acdef.png" title=" Ian enters 'Ian' into campo donde se introduce el nombre del cliente" width="1366"/>
+                <img src="02528e51c5d5e760f2a822733213afd58983b6afff58a6e8f155b92c856acdef.png" title=" Ian enters 'Ian' into campo donde se introduce el nombre del cliente (completed)" width="1366"/>
+                <img src="02528e51c5d5e760f2a822733213afd58983b6afff58a6e8f155b92c856acdef.png" title=" Ian enters 'Bravo' into campo donde se introduce el apellido del cliente" width="1366"/>
+                <img src="476e3b2d30b80a69fc5698e433229e7e2ccd81f76fc370d59e67306652650c1d.png" title=" Ian enters 'Bravo' into campo donde se introduce el apellido del cliente" width="1366"/>
+                <img src="476e3b2d30b80a69fc5698e433229e7e2ccd81f76fc370d59e67306652650c1d.png" title=" Ian enters 'Bravo' into campo donde se introduce el apellido del cliente (completed)" width="1366"/>
+                <img src="476e3b2d30b80a69fc5698e433229e7e2ccd81f76fc370d59e67306652650c1d.png" title=" Ian enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente" width="1366"/>
+                <img src="e6fd4610de574314bf826d4e7af8a84036be909de2e8175a3db6dfebb57af05b.png" title=" Ian enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente" width="1366"/>
+                <img src="e6fd4610de574314bf826d4e7af8a84036be909de2e8175a3db6dfebb57af05b.png" title=" Ian enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente (completed)" width="1366"/>
+                <img src="e6fd4610de574314bf826d4e7af8a84036be909de2e8175a3db6dfebb57af05b.png" title=" Ian select 14   on lista desplegable de los d&iacute;as" width="1366"/>
+                <img src="95cf29c8d9c1604a0d2051de301539223019f2ad7fb0cce1c207624b2f265c25.png" title=" Ian select 14   on lista desplegable de los d&iacute;as" width="1366"/>
+                <img src="95cf29c8d9c1604a0d2051de301539223019f2ad7fb0cce1c207624b2f265c25.png" title=" Ian select 14   on lista desplegable de los d&iacute;as (completed)" width="1366"/>
+                <img src="95cf29c8d9c1604a0d2051de301539223019f2ad7fb0cce1c207624b2f265c25.png" title=" Ian select June  on lista desplegable de los meses" width="1366"/>
+                <img src="cc3a5c00699c53c65b54bf23ce7cefd8ad038740ea3fc91c3212f39af9e9a26a.png" title=" Ian select June  on lista desplegable de los meses" width="1366"/>
+                <img src="cc3a5c00699c53c65b54bf23ce7cefd8ad038740ea3fc91c3212f39af9e9a26a.png" title=" Ian select June  on lista desplegable de los meses (completed)" width="1366"/>
+                <img src="cc3a5c00699c53c65b54bf23ce7cefd8ad038740ea3fc91c3212f39af9e9a26a.png" title=" Ian select 1993   on lista desplegable de los a&ntilde;os" width="1366"/>
+                <img src="2737aa9750dccf508af98dc64497f56df34798c3021acda1f453ab4525f85bac.png" title=" Ian select 1993   on lista desplegable de los a&ntilde;os" width="1366"/>
+                <img src="2737aa9750dccf508af98dc64497f56df34798c3021acda1f453ab4525f85bac.png" title=" Ian select 1993   on lista desplegable de los a&ntilde;os (completed)" width="1366"/>
+                <img src="2737aa9750dccf508af98dc64497f56df34798c3021acda1f453ab4525f85bac.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce la direcci&oacute;n del cliente" width="1366"/>
+                <img src="49e047e35be185b36f996adf732c058a297f12ea93a66e490a732363c69e6155.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce la direcci&oacute;n del cliente" width="1366"/>
+                <img src="49e047e35be185b36f996adf732c058a297f12ea93a66e490a732363c69e6155.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce la direcci&oacute;n del cliente (completed)" width="1366"/>
+                <img src="49e047e35be185b36f996adf732c058a297f12ea93a66e490a732363c69e6155.png" title=" Ian enters 'Medellin' into campo donde se introduce la ciudad" width="1366"/>
+                <img src="c373c8553e45e09e61f3ae36b2f0fccf6f0e435e7661db3137e2836cb9302f41.png" title=" Ian enters 'Medellin' into campo donde se introduce la ciudad" width="1366"/>
+                <img src="c373c8553e45e09e61f3ae36b2f0fccf6f0e435e7661db3137e2836cb9302f41.png" title=" Ian enters 'Medellin' into campo donde se introduce la ciudad (completed)" width="1366"/>
+                <img src="c373c8553e45e09e61f3ae36b2f0fccf6f0e435e7661db3137e2836cb9302f41.png" title=" Ian select Kansas on lista desplegable de los estado que hay en USA" width="1366"/>
+                <img src="73f45e938965bcc0eb468d0ab73eaa6d1759df4b9396cf9c5aed9f6b49981e33.png" title=" Ian select Kansas on lista desplegable de los estado que hay en USA" width="1366"/>
+                <img src="73f45e938965bcc0eb468d0ab73eaa6d1759df4b9396cf9c5aed9f6b49981e33.png" title=" Ian select Kansas on lista desplegable de los estado que hay en USA (completed)" width="1366"/>
+                <img src="73f45e938965bcc0eb468d0ab73eaa6d1759df4b9396cf9c5aed9f6b49981e33.png" title=" Ian enters '12345' into campo donde se introduce el c&oacute;digo postal donde vive el cliente" width="1366"/>
+                <img src="b45112b37608810ba6438c7cc5786e2c525def2ed18d6f4d48f50fcdaf97d4ab.png" title=" Ian enters '12345' into campo donde se introduce el c&oacute;digo postal donde vive el cliente" width="1366"/>
+                <img src="b45112b37608810ba6438c7cc5786e2c525def2ed18d6f4d48f50fcdaf97d4ab.png" title=" Ian enters '12345' into campo donde se introduce el c&oacute;digo postal donde vive el cliente (completed)" width="1366"/>
+                <img src="b45112b37608810ba6438c7cc5786e2c525def2ed18d6f4d48f50fcdaf97d4ab.png" title=" Ian select United States on lista desplegable de los pa&iacute;ses" width="1366"/>
+                <img src="ca5ed3176a3c7cdc27d75c2d41fd4be84d3cb4b7d6735166a7a7033056329ebb.png" title=" Ian select United States on lista desplegable de los pa&iacute;ses" width="1366"/>
+                <img src="ca5ed3176a3c7cdc27d75c2d41fd4be84d3cb4b7d6735166a7a7033056329ebb.png" title=" Ian select United States on lista desplegable de los pa&iacute;ses (completed)" width="1366"/>
+                <img src="ca5ed3176a3c7cdc27d75c2d41fd4be84d3cb4b7d6735166a7a7033056329ebb.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce una direcci&oacute;n alternativa para futura referencia" width="1366"/>
+                <img src="5353c495a15f55fdfcea8e071ab48aa2c733e1acb38a470f061337dccd688a05.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce una direcci&oacute;n alternativa para futura referencia" width="1366"/>
+                <img src="5353c495a15f55fdfcea8e071ab48aa2c733e1acb38a470f061337dccd688a05.png" title=" Ian enters 'Avenida Siempre Viva' into campo donde se introduce una direcci&oacute;n alternativa para futura referencia (completed)" width="1366"/>
+                <img src="5353c495a15f55fdfcea8e071ab48aa2c733e1acb38a470f061337dccd688a05.png" title=" Ian clicks on bot&oacute;n para finalizar el registro del cliente" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Ian clicks on bot&oacute;n para finalizar el registro del cliente" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Ian clicks on bot&oacute;n para finalizar el registro del cliente (completed)" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Ian introducir datos (completed)" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Ian crear cuenta (completed)" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Cuando en el registro introduzca los siguientes datos a excepcion del numero de telefono
+| Ian | Bravo | hola100@gmail.com | TensaZangetsu | 14;June;1993 | Avenida Siempre Viva | Medellin | Kansas | 12345 | United States | Avenida Siempre Viva | (completed)" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Entonces le debe salir el mensaje de error &quot;You must register at least one phone number.&quot;" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Then mensaje numero telefono should be 'You must register at least one phone number.'" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Then mensaje numero telefono should be 'You must register at least one phone number.' (completed)" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Entonces le debe salir el mensaje de error &quot;You must register at least one phone number.&quot; (completed)" width="1366"/>
+                <img src="039db9a93d2b6bc927814aa7f3f532c51706e49d505aab0723e56e3400d639d1.png" title=" Example: {nombre=Ian, apellido=Bravo, correo=hola100@gmail.com, pass=TensaZangetsu, fecha_nac=14;June;1993, dir=Avenida Siempre Viva, ciudad=Medellin, estado=Kansas, cod_postal=12345, pais=United States, dir_ref=Avenida Siempre Viva} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.84</span>
+</div>
+</body>
+</html>

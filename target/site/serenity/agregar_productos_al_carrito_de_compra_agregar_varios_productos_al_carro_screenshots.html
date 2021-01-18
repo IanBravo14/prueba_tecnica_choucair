@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Prueba Técnica CHOUCAIR</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_agregar_productos_al_carrito_de_compra.html">Agregar Productos Al Carrito De Compra</a></span>
+                > <span class="truncate-60"><a
+                    href="agregar_productos_al_carrito_de_compra_agregar_varios_productos_al_carro.html">Agregar varios productos al carro </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-01-2021 20:19</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Agregar Productos Al Carrito De Compra </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como compradora<br />
+Quiero agregar productos al carrito<br />
+Para tener una idea de el valor total a pagar
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Agregar varios productos al carro
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que "Alicia" ingresa a la aplicacion<br>Cuando se agreguen varios productos al carrito<br><table class='embedded'><tbody><tr><td>&lt;correo&gt;</td><td>&lt;password&gt;</td><td>&lt;seccion_vestido&gt;</td><td>&lt;seccion_t_shirt&gt;</td><td>&lt;nom_vestido&gt;</td><td>&lt;nom_t_shirt&gt;</td></tr></tbody></table><br>Entonces debe observar los siguientes campos<br><table class='embedded'><tbody><tr><td>&lt;nom_vestido&gt;</td><td>&lt;nom_t_shirt&gt;</td><td>&lt;precio_vestido&gt;</td><td>&lt;precio_t_shirt&gt;</td><td>&lt;total_precio_sin_envio&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Example: {correo=aliciamanuel@gmail.com, password=TensaZangetsu, seccion_vestido=Dresses, seccion_t_shirt=T-shirts, nom_vestido=Printed Chiffon Dress, nom_t_shirt=Faded Short Sleeve T-shirts, precio_vestido=$16.40, precio_t_shirt=$16.51, total_precio_sin_envio=$32.91}" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Dado que &quot;Alicia&quot; ingresa a la aplicacion" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Alicia opens the http://automationpractice.com/index.php" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Dado que &quot;Alicia&quot; ingresa a la aplicacion (completed)" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Cuando se agreguen varios productos al carrito
+| aliciamanuel@gmail.com | TensaZangetsu | Dresses | T-shirts | Printed Chiffon Dress | Faded Short Sleeve T-shirts |" width="1366"/>
+                <img src="8893b395760110b3aa24ffc26a082dec3f2614c43a613f653d868fea1ed9f8bb.png" title=" Alicia autenticarse" width="1366"/>
+                <img src="d8adbeb7484f7e3f6a8ca7fa7304ff3d9aee8c37ca9efa9da32d62a8465cb142.png" title=" Alicia clicks on bot&oacute;n para ingresar al registro" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Alicia clicks on bot&oacute;n para ingresar al registro" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Alicia clicks on bot&oacute;n para ingresar al registro (completed)" width="1366"/>
+                <img src="0acb4b9680e672519d2773416e8744b854a44b5a7cdf68c44eacf7d3bdcbcec6.png" title=" Alicia enters 'aliciamanuel@gmail.com' into campo donde se introduce el email del cliente" width="1366"/>
+                <img src="e094ba4f3651b2482b406876d901439445c186d51f89685a16e22e2c1159ac1e.png" title=" Alicia enters 'aliciamanuel@gmail.com' into campo donde se introduce el email del cliente" width="1366"/>
+                <img src="7289050a754c000dd084677b9141afbbc9b00697231b09f0f0f5ac0b0c6a2987.png" title=" Alicia enters 'aliciamanuel@gmail.com' into campo donde se introduce el email del cliente (completed)" width="1366"/>
+                <img src="7289050a754c000dd084677b9141afbbc9b00697231b09f0f0f5ac0b0c6a2987.png" title=" Alicia enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente" width="1366"/>
+                <img src="81e4c30a5c14863a426539e140d86452d67d891033b08ea967467048431b7802.png" title=" Alicia enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente" width="1366"/>
+                <img src="81e4c30a5c14863a426539e140d86452d67d891033b08ea967467048431b7802.png" title=" Alicia enters 'TensaZangetsu' into campo donde se introduce la contrase&ntilde;a del cliente (completed)" width="1366"/>
+                <img src="81e4c30a5c14863a426539e140d86452d67d891033b08ea967467048431b7802.png" title=" Alicia clicks on bot&oacute;n para auntenticarse en la aplicaci&oacute;n" width="1366"/>
+                <img src="823c5b725c36c880d8b99775368985e95a28ff528ef8d5704935c5ba8bdf1522.png" title=" Alicia clicks on bot&oacute;n para auntenticarse en la aplicaci&oacute;n" width="1366"/>
+                <img src="823c5b725c36c880d8b99775368985e95a28ff528ef8d5704935c5ba8bdf1522.png" title=" Alicia clicks on bot&oacute;n para auntenticarse en la aplicaci&oacute;n (completed)" width="1366"/>
+                <img src="823c5b725c36c880d8b99775368985e95a28ff528ef8d5704935c5ba8bdf1522.png" title=" Alicia autenticarse (completed)" width="1366"/>
+                <img src="823c5b725c36c880d8b99775368985e95a28ff528ef8d5704935c5ba8bdf1522.png" title=" Alicia agregar productos" width="1366"/>
+                <img src="823c5b725c36c880d8b99775368985e95a28ff528ef8d5704935c5ba8bdf1522.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n que el cliente desee" width="1366"/>
+                <img src="6aa420855474ac32725586ce14651523c042f9c3c15a121fc17beed4689357f9.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n que el cliente desee" width="1366"/>
+                <img src="6aa420855474ac32725586ce14651523c042f9c3c15a121fc17beed4689357f9.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n que el cliente desee (completed)" width="1366"/>
+                <img src="6aa420855474ac32725586ce14651523c042f9c3c15a121fc17beed4689357f9.png" title=" Alicia clicks on producto que se va a comprar" width="1366"/>
+                <img src="645af5e3befed97f3d4a2d9f0fe3d09d1c7bc7c1e7ea880cd141327256f4df47.png" title=" Alicia clicks on producto que se va a comprar (completed)" width="1366"/>
+                <img src="645af5e3befed97f3d4a2d9f0fe3d09d1c7bc7c1e7ea880cd141327256f4df47.png" title=" Alicia clicks on bot&oacute;n para agregar el producto al carrito" width="1366"/>
+                <img src="d14e545f41a96184e0b1a10337e9ce1cd7215384a68209c7e98175b769868f70.png" title=" Alicia clicks on bot&oacute;n para agregar el producto al carrito" width="1366"/>
+                <img src="d14e545f41a96184e0b1a10337e9ce1cd7215384a68209c7e98175b769868f70.png" title=" Alicia clicks on bot&oacute;n para agregar el producto al carrito (completed)" width="1366"/>
+                <img src="8a08763cdaa791024a58ccc8c383e8c8226f6646ad0baf3a342e990ca18278c5.png" title=" Alicia clicks on bot&oacute;n que permite continuar comprando" width="1366"/>
+                <img src="e7dffd65650225bb315949516be059b47e2a6bf7861e2b510ba2090c009f9623.png" title=" Alicia clicks on bot&oacute;n que permite continuar comprando" width="1366"/>
+                <img src="e7dffd65650225bb315949516be059b47e2a6bf7861e2b510ba2090c009f9623.png" title=" Alicia clicks on bot&oacute;n que permite continuar comprando (completed)" width="1366"/>
+                <img src="bd5249840658351726b74497ddc83a2c5d3a37727c640a729e7ec9d7f36d9c16.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n que el cliente desee" width="1366"/>
+                <img src="2c37ef154a4d98665879774377f4be3a62884509c04b805045f0adf117dae091.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n que el cliente desee" width="1366"/>
+                <img src="2c37ef154a4d98665879774377f4be3a62884509c04b805045f0adf117dae091.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n que el cliente desee (completed)" width="1366"/>
+                <img src="2c37ef154a4d98665879774377f4be3a62884509c04b805045f0adf117dae091.png" title=" Alicia clicks on producto que se va a comprar" width="1366"/>
+                <img src="58001cec302ceb9b31d524f7cc8578753ab26a6f3c31f5ed9e51306529d587b6.png" title=" Alicia clicks on producto que se va a comprar (completed)" width="1366"/>
+                <img src="58001cec302ceb9b31d524f7cc8578753ab26a6f3c31f5ed9e51306529d587b6.png" title=" Alicia clicks on bot&oacute;n para agregar el producto al carrito" width="1366"/>
+                <img src="8ead1aa14d4f984c8caff1c03665ddfe151d0aa3dd35a39082fd625a402d9219.png" title=" Alicia clicks on bot&oacute;n para agregar el producto al carrito" width="1366"/>
+                <img src="8ead1aa14d4f984c8caff1c03665ddfe151d0aa3dd35a39082fd625a402d9219.png" title=" Alicia clicks on bot&oacute;n para agregar el producto al carrito (completed)" width="1366"/>
+                <img src="0741476dd15fb6b47d90a129a3dbb80129ef2b755f1d7fdf983021b01e0b1db4.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n del carrito de compras" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n del carrito de compras" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Alicia clicks on bot&oacute;n para ingresar a la secci&oacute;n del carrito de compras (completed)" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Alicia agregar productos (completed)" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Cuando se agreguen varios productos al carrito
+| aliciamanuel@gmail.com | TensaZangetsu | Dresses | T-shirts | Printed Chiffon Dress | Faded Short Sleeve T-shirts | (completed)" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Entonces debe observar los siguientes campos
+| Printed Chiffon Dress | Faded Short Sleeve T-shirts | $16.40 | $16.51 | $32.91 |" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Then valores del carrito" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Then valores del carrito (completed)" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Entonces debe observar los siguientes campos
+| Printed Chiffon Dress | Faded Short Sleeve T-shirts | $16.40 | $16.51 | $32.91 | (completed)" width="1366"/>
+                <img src="e03acff7f580bb53445f5fa9757b2d3db96dc9ec8c6c5b3ccc153bfd6d044a3f.png" title=" Example: {correo=aliciamanuel@gmail.com, password=TensaZangetsu, seccion_vestido=Dresses, seccion_t_shirt=T-shirts, nom_vestido=Printed Chiffon Dress, nom_t_shirt=Faded Short Sleeve T-shirts, precio_vestido=$16.40, precio_t_shirt=$16.51, total_precio_sin_envio=$32.91} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.84</span>
+</div>
+</body>
+</html>

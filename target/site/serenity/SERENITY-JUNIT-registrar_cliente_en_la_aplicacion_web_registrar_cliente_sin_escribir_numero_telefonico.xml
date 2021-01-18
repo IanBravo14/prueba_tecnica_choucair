@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Registrar cliente en la aplicacion web" skipped="0" tests="2" time="75.84" timestamp="2021-01-17 09:49:38"><testcase name="Registrar cliente sin escribir numero telefonico"/><testcase name="Registrar cliente solo llenando el nombre y apellido"/></testsuite>
